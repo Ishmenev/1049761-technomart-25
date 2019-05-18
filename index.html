@@ -10,7 +10,13 @@
   			<a class="main-header-logo" href="index.html">
   				<img src="img/logo.png" width="220" height="47" alt="Интернет-магазина «Техномарт»">
   			</a>
-  			<a class="search" href="#">Поиск</a>
+        <form class="site-search-form" action="#" method="get">
+          <label>
+            <img src="img/icon-search.svg" width="17" height="17">
+            <span class="search-text">Поиск</span>
+            <input type="search" name="site-search">
+          </label>          
+        </form>
   			<a class="tabs" href="#">Закладки</a>
   			<a class="basket" href="#">Корзина</a>
   			<a class="button-order" href="#">Оформить заказ</a>
@@ -21,8 +27,12 @@
   			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
   		</div>
   		<ul class="user-navigation">
-  			<li class="login-link">Войти</li>
-  			<li class="check-in">Регистрация</li>
+  			<li>
+  				<a href="#" class="login-link">Войти</a>
+  			</li>
+  			<li>
+  				<a href=" class="check-in">Регистрация</a>
+  			</li>
   		</ul>
   		<nav class="main-header-navigation">
   			<ul class="header-site-navigation">
@@ -100,16 +110,46 @@
   		</nav>
   		<p class="footer-company-copyright">© 2010–2019 Компания «Техномарт»<br>
   		Все права защищены</p>
-  		<ul class="social-media">
-  			<li><a class="button-social" href="#">Вконтакте</a></li>
-  			<li><a class="button-social" href="#">Фэйсбук</a></li>
-  			<li><a class="button-social" href="#">Инстаграм</a></li>
-  		</ul>
+      <ul class="social-media">
+        <li><a class="button-social-vcontakte" href="#" aria-label="Техномарт в Контакте"><img src="img/icon-vcontakte.png" width="42" height="42"></a></li>
+        <li><a class="button-social-facebook" href="#" aria-label="Техномарт на Фейсбуке"><img src="img/icon-facebook.png" width="42" height="42"</a></li>
+        <li><a class="button-social-instagram" href="#" aria-label="Техномарт в Инстаграме"><img src="img/icon-instagram.png" width="42" height="42"</a></li>
+      </ul>
   		<div class="footer-feedback">Обратная связь:</div>
   		<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>  			
   		<p class="design-company-copyright">Разработано —<br>
   		<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
   	</footer>
+
+
+  	<section class="modal modal-feedback">
+  		<h2 class="visually-hidden">Обратная связь</h2>
+  		<form class="feedback-form" action="#" method="post">
+	  		<p>
+	  			<label for="feedback-name-input">Ваше имя:</label>
+	  			<input type="text" id="feedback-name-input" name="feed-name" placeholder="Имя Фамилия">
+	  		</p>
+	  		 <p>
+	  			<label for="feedback-email-input">Ваш e-mail:</label>
+	  			<input type="text" id="feedback-email-input" name="feed-email" placeholder="email@example.com">
+	  		</p>
+	  		<p>
+	  			<label for="feedback-comment-field">Текст письма:</label><br>
+	  			<textarea id="feedback-comment-field" rows="7" cols="40" name="feed-comment">В свободной форме</textarea>
+	  		</p>
+  		</form>
+  		<button type="submit" class="button">Отправить</button>
+  		<button type="button" class="modal-close">Закрыть</button>	
+
+
+  	<section class="modal modal-map">
+      <h2 class="visually-hidden">Наш офис на карте</h2>
+      <p>
+        <img src="img/map.jpg" width="940" height="447" alt="Офис компании по адресу ул.Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button type="button" class="modal-close">Закрыть</button>
+    </section>  		
+  	</section>
 
   </body>
 </html>
