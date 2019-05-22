@@ -1,16 +1,7 @@
-@font-face {
-  font-family: Cuprum;
-  src: url(css/Cuprum-Regular.ttf); 
-}
-
-@font-face {
-  font-family: PT Sans;
-  src: url(css/CPTS55F.ttf); 
-}
 
 body {
 	margin: 0;
-	font-family: "PT Sans - Narrow Bold", Arial, sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 20px; 
 	font-weight: 700;
@@ -23,7 +14,7 @@ a {
 
 .main-header {
 	color: rgb(255, 255, 255);
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 17px;
 	font-weight: 400;
 	line-height: 18px;
@@ -33,7 +24,7 @@ a {
 
 .main-header h1 {
 	color: #ee3643;
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 16px;
 	font-style: italic;
 	line-height: 23px;
@@ -41,7 +32,7 @@ a {
 
 .header-user-menu {
 	color: rgb(255, 255, 255);
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 17px;
 	font-weight: 400;
 	line-height: 18px;
@@ -50,7 +41,7 @@ a {
 
 .header-user-menu a {
 	color: rgb(255, 255, 255);
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 17px;
 	font-weight: 400;
 	line-height: 18px;
@@ -103,7 +94,7 @@ a {
 
 .header-contacts a {
 	color: #ee3643;
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 21px;
 	font-weight: 400;
 	line-height: 21px;
@@ -113,7 +104,7 @@ a {
 
 .header-contacts p {
 	color: #32425c;
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
@@ -126,7 +117,7 @@ a {
 
 .user-navigation a {
 	color: rgb(0, 0, 0);
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 21px;
 	font-weight: 400;
 	line-height: 21px;
@@ -152,7 +143,7 @@ a {
 
 .main-header-navigation a {
 	color: rgb(255, 255, 255);
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 17px;
 	font-weight: 400;
 	line-height: 17px;
@@ -174,7 +165,7 @@ a {
 
 
 .delivery-offer b {
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 30px;
@@ -182,7 +173,7 @@ a {
 }
 
 .delivery-offer p {
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 24px;
@@ -192,7 +183,7 @@ a {
 	list-style: none;
 }
 .delivery-offer li {
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 20px;
@@ -204,7 +195,7 @@ a {
 	height: 38px;
 	background-color: rgb(238, 54, 67);
 	color: rgb(255, 255, 255);
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 18px;
@@ -212,7 +203,7 @@ a {
 }
 
 .direction b {
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 30px;
@@ -220,7 +211,7 @@ a {
 }
 
 .direction p {
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 24px;
@@ -232,7 +223,7 @@ a {
 	height: 38px;
 	background-color: rgb(238, 54, 67);
 	color: rgb(255, 255, 255);
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 18px;
@@ -249,7 +240,7 @@ a {
 
 .breadcrumbs a {
 	color: rgb(0, 0, 0);
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 18px;
@@ -262,7 +253,7 @@ a {
 
 .breadcrumbs-current {
 	color: rgba(0, 0, 0, 0.4);
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 18px;
@@ -272,7 +263,7 @@ a {
 .container h2 {
 	background-color: rgb(242, 246, 248);
 	color: #32425c;
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 30px;
@@ -285,7 +276,7 @@ a {
 
 .filters-form legend {
 	color: rgb(0, 0, 0);
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 17px;
 	font-weight: 700;
 	line-height: 30px;
@@ -299,7 +290,7 @@ a {
 
 .filters-form li {
 	color: rgb(0, 0, 0);
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -317,7 +308,7 @@ a {
 	border: 1px solid #e5e5e5;
 	background-color: rgb(255, 255, 255);
 	color: rgb(0, 0, 0);
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 18px;
@@ -341,7 +332,7 @@ a {
 }
 
 .catalog-item h3 {
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 20px;
@@ -349,7 +340,7 @@ a {
 
 .catalog-item-price del {
 	color: #999999;
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 17px;
 	font-weight: 700;
 	line-height: 18px;
@@ -362,7 +353,7 @@ a {
 	height: 38px;
 	background-color: rgb(238, 54, 67);
 	color: rgb(255, 255, 255);
-	font-family: "PT Sans";
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 17px;
 	font-weight: 700;
 	line-height: 2.3;
@@ -401,7 +392,7 @@ a {
 
 .footer-site-navigation a {
 	color: #f1f5f7;
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 24px;
@@ -417,7 +408,7 @@ a {
 
 .footer-navigation p {
 	color: #f1f5f7;
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 24px;
@@ -425,7 +416,7 @@ a {
 
 .footer-offer-navigation a {
 	color: #ffd180;
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 24px;
@@ -481,7 +472,7 @@ a {
 
 .information-out p {
 	color: rgb(255, 255, 255);
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 18px;
@@ -490,7 +481,7 @@ a {
 .feedback-email,
 .site-founders {
 	color: #ffd180;
-	font-family: Cuprum;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 18px;
