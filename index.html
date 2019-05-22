@@ -3,23 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Главная страница Техномарт</title>
+    <link rel="stylesheet" type="text/css" href="link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
   	<header class="main-header">
   		<div class="header-user-menu">
-  			<a class="main-header-logo" href="index.html">
-  				<img src="img/logo.png" width="220" height="47" alt="Интернет-магазина «Техномарт»">
-  			</a>
-        <form class="site-search-form" action="#" method="get">
-          <label>
-            <img src="img/icon-search.svg" width="17" height="17">
-            <span class="search-text">Поиск</span>
-            <input type="search" name="site-search">
-          </label>          
-        </form>
-  			<a class="tabs" href="#">Закладки</a>
-  			<a class="basket" href="#">Корзина</a>
-  			<a class="button-order" href="#">Оформить заказ</a>
+          <a class="user-menu-item" href="index.html">     
+            <div class="header-logo-image"></div>
+          </a>
+          <a class="user-menu-item" href="#"><img src="img/search.svg"> Поиск:</a>
+    			<a class="user-menu-item"href="#">Закладки: 0</a>
+    			<a class="user-menu-item" href="#">Корзина: 0</a>
+    			<a class="user-menu-item" href="#">Оформить заказ</a>
   		</div>
   		<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
   		<div class="header-contacts">
@@ -27,15 +25,11 @@
   			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
   		</div>
   		<ul class="user-navigation">
-  			<li>
-  				<a href="#" class="login-link">Войти</a>
-  			</li>
-  			<li>
-  				<a href=" class="check-in">Регистрация</a>
-  			</li>
+  			<li><a href="#" class="navigation-item">Войти</a></li>
+  			<li><a href="#" class="navifation-item">Регистрация</a></li>
   		</ul>
   		<nav class="main-header-navigation">
-  			<ul class="header-site-navigation">
+  			<ul>
   				<li class="index-current"><a href="index.html">Главная</a></li>
   				<li><a href="company.html">Компания</a></li>
   				<li><a href="catalog.html">Каталог</a></li>
@@ -63,7 +57,7 @@
   			<h2>Сервисы</h2>
   			<!-- Здесь будет слайдер с перечислением основных сервисов -->
   		</section>
-  		<section class="delivery-forms">
+  		<section class="delivery-types">
   			<h2 class="visually-hidden">Способы доставки товара</h2>
   			<div class=delivery-offer>
   				<b>КОМПАНИЯ «Техномарт»</b>
@@ -75,7 +69,8 @@
   					<li>Автотрейдинг</li>
   					<li>ЖелДорЭкспедиция</li>  					
   				</ul>
-  				<a class="button-delivery-company" href="#">Подробнее о компании</a>		
+          <button type="button" class="company-details">Подробнее о компании</button>
+	
   			</div>
   			<div class="direction">
   				<b>Контакты</b>
@@ -84,15 +79,13 @@
   				<a class="map" href="#">
   					<img src="img/location-on-map.jpg" src="#" width="300" height="158" alt="Наше положение на карте">  					
   				</a>
-  				<a class="buton-feedback" href="#">Заблудились? Напишите нам!</a>
+  				<button type="button" class="buton-feedback" href="#">Заблудились? Напишите нам!</button>
   			</div>
   		</section>
   	</main>
   	<footer class="main-footer">
   		<nav class="footer-navigation">
-  			<a class="main-footer-logo" href="index.html">
-  				<img src="img/footer-logo.png" width="220" height="68" alt="Интернет-магазина «Техномарт»">
-  			</a>
+  			<div class="footer-logo-image"></div>
   			<ul class="footer-site-navigation">
   				<li><a href="company.html">Компания</a></li>
   				<li><a href="news.html">Новости</a></li>
@@ -108,17 +101,32 @@
   				<li><a href="offers.html">Спецпредложения</a></li>
   			</ul>
   		</nav>
-  		<p class="footer-company-copyright">© 2010–2019 Компания «Техномарт»<br>
-  		Все права защищены</p>
-      <ul class="social-media">
-        <li><a class="button-social-vcontakte" href="#" aria-label="Техномарт в Контакте"><img src="img/icon-vcontakte.png" width="42" height="42"></a></li>
-        <li><a class="button-social-facebook" href="#" aria-label="Техномарт на Фейсбуке"><img src="img/icon-facebook.png" width="42" height="42"</a></li>
-        <li><a class="button-social-instagram" href="#" aria-label="Техномарт в Инстаграме"><img src="img/icon-instagram.png" width="42" height="42"</a></li>
-      </ul>
-  		<div class="footer-feedback">Обратная связь:</div>
-  		<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>  			
-  		<p class="design-company-copyright">Разработано —<br>
-  		<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+      <div class="information-out">
+    		<p>© 2010–2019 Компания «Техномарт»<br>
+    		Все права защищены</p>
+        <ul class="social-media">
+          <li>
+            <a href="#" aria-label="Техномарт в Контакте">
+              <p class="social-vkontakte"></p>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Техномарт на Фейсбуке">
+              <p class="social-facebook"></p>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Техномарт в Инстаграме">
+              <p class="social-instagram"></p>
+            </a>
+          </li>
+        </ul>
+    		<p>Обратная связь:</p>
+    		<a class="feedback-email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a> 
+    		<p>Разработано —<br>
+    		<a class="site-founders" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+      </div>
+
   	</footer>
 
 
