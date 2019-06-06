@@ -13,13 +13,13 @@
       <div class="menu-wrapper">
         <div class="container">  
           <div class="header-user-menu">
-              <a class="user-menu-item header-logo" href="index.html"></a>
-              <form class="user-menu-item" action="#" method="get">
-              	<input type="text" id="search-link" placeholder="Поиск:" name="search-menu">
+              <a class="user-menu-logo" href="index.html"><img src="img/logo.svg" width="220px" height="19px"></a>
+              <form class="user-menu-search" action="#" method="get">
+                <input type="search" id="search-link" placeholder="Поиск:" name="search-menu">
               </form>
-              <a class="user-menu-item marks-link" href="#">Закладки: 0</a>
-              <a class="user-menu-item basket-link" href="#">Корзина: 0</a>
-              <a class="user-menu-item order-link" href="#">Оформить заказ</a>
+              <a class="user-menu-link marks-link" href="#">Закладки: 0</a>
+              <a class="user-menu-link basket-link" href="#">Корзина: 0</a>
+              <a class="user-menu-link order-link" href="#">Оформить заказ</a>
           </div>
         </div>
       </div>
@@ -51,43 +51,68 @@
     </header>
   	<main class="genaral-content">
       <div class="container">
-    	<section class=promo>
-    			<h2 class="visually-hidden">Презентация товаров</h2>
-          <ul class="promo-list">
-            <li class="promo-list-item"><a href="#">На любой вкус</a></li>
-            <li class="promo-list-item"><a href="#">На все случаи</a></li>
-            <li class="promo-list-item"><a href="#">Для стройки</a></li>
-            <li class="promo-list-slider slider">
-                <input type="radio" id="slider-previous" name="slider-button" checked>
-                <input type="radio" id="slider-next" name="slider-button">
-                <div class="slider-controls">
-                  <label for="slider-previous"></label>
-                  <label for="slider-next"></label>
-                </div>
-                <div class="slider-inner">
-                  <ul class="slider-list">
-                    <li class="slider-item">
-                      <b>Дрели</b>
-                      <span>Соседям на радость!</span>
-                      <a class="slider-item-button" href="catalog.html">Открыть каталог</a>
-                    </li>
-                    <li class="slider-item">
-                      <b>Перфораторы</b>
-                      <span>Настоящие мужские игрушки</span>
-                      <a class="slider-item-button" href="catalog.html">Открыть каталог</a>        
-                    </li>
-                  </ul>
-            </li>
-            <li class="promo-list-item"><a href="#">На 350 товаров</a>
-              <div class="promo-list-item free-delivery"><a href="#">Бесплатно</a></div>
-            </li>
-          </ul>	
-    	</section>
-      	</div>
+        <section class=promo>
+            <h2 class="visually-hidden">Презентация товаров</h2>
+            <ul class="promo-list">
+              <li class="promo-list-item">
+                <span>Материалы</span>
+                <a class="button-common promo-list-button" href="#">На любой вкус</a>
+              </li>
+              <li class="promo-list-item">
+                <span>Инструменты</span>
+                <a class="button-common promo-list-button" href="#">На все случаи</a>
+              </li>
+              <li class="promo-list-item">
+                <span>Техника</span>
+                <a class="button-common promo-list-button" href="#">Для стройки</a>
+              </li>
+              <li class="promo-list-slider slider">
+                  <input type="radio" id="slider-previous" name="slider-button" checked>
+                  <input type="radio" id="slider-next" name="slider-button">
+                  <div class="slider-controls">
+                    <label for="slider-previous"></label>
+                    <label for="slider-next"></label>
+                  </div>
+                  <div class="slider-indicator drills">
+                    <span class="slider-indicator-active"></span>
+                    <span class="slider-indicator-item"></span>
+                  </div>
+                  <div class="slider-inner">
+                      <div class="slider-item">
+                          <div class="slider-item-title">
+                          <b>Дрели</b>
+                          <span>Соседям на радость!</span>
+                          </div>
+                          <a class="button-common slider-button" href="catalog.html">Открыть каталог</a>
+                      </div>
+                      <div class="slider-item">
+                          <div class="slider-item-title">
+                          <b>Перфораторы</b>
+                          <span>Настоящие мужские игрушки</span>
+                          </div>
+                          <a class="button-common slider-button" href="catalog.html">Открыть каталог</a>    
+                          <div class="slider-indicator perforators">
+                            <span class="slider-indicator-item"></span>
+                            <span class="slider-indicator-active"></span>
+                          </div>    
+                      </div>
+                   
+                  </div>    
+              </li>
+              <li class="promo-list-item">
+                <span>Скидка 50%</span>
+                <a class="button-common promo-list-button" href="#">На 350 товаров</a>
+                <div class="promo-list-item free-delivery">
+                  <span>Доставка</span>
+                  <a class="button-common promo-list-button" href="#">Бесплатно</a></div>
+              </li>
+            </ul> 
+        </section>
+      </div>
       	<section class="popular-products">
       		<div class="popular-title">
 	             <h2>Популярные товары</h2>
-	             <a class="button-all-products" href="#">Все популярные товары</a>
+	             <a class="button-common popular" href="#">Все популярные товары</a>
              </div> 
 	           <div class="container">
 	           	<ul class="catalog-list">
@@ -177,7 +202,7 @@
     	<section class="popular-companies">
             <div class="popular-title">
 	             <h2>Популярные производители</h2>
-	             <a class="button-all-companies" href="#">Все производители</a>
+	             <a class="button-common popular" href="#">Все производители</a>
              </div> 
          	<div class="container">
             <ul class="pop-companies-list">
@@ -218,37 +243,37 @@
 	  					<li class="services-slide">
 	  						<h3>Кредит</h3>
 	  						<p>Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.</p>
-	  						<a href="#">Отправить заявку</a>
+	  						<a class="button-common send-request" href="#">Отправить заявку</a>
 	  					</li>
 	  				</ul>
   			</div>
   		</section>
      	 <div class="container">
-    		<section class="delivery-types">
-    			<h2 class="visually-hidden">Способы доставки товара</h2>
-    			<div class=delivery-offer>
-    				<b>КОМПАНИЯ «Техномарт»</b>
-    				<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-    				<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-    				Техномарт работает со многими транспортными компаниями: </p>
-    				<ul class="delivery-companies">
-    					<li>Деловые линии</li>
-    					<li>Автотрейдинг</li>
-    					<li>ЖелДорЭкспедиция</li>  					
-    				</ul>
-    				<a class="button-delivery-types company-details" href="#">Подробнее о компании</a>
-  	
-    			</div>
-    			<div class="direction">
-    				<b>Контакты</b>
-    				<p>Вы можете забрать товар сами,<br>
-    				заехав в наш офис:</p>
-    				<a class="map" href="#">
-    					<img src="img/location-on-map.jpg" src="#" width="300" height="158" alt="Наше положение на карте">  					
-    				</a>
-    				<a class="button-delivery-types feedback" href="#">Заблудились? Напишите нам!</a>
-    			</div>
-    		</section>
+		<section class="delivery-types">
+			<h2 class="visually-hidden">Способы доставки товара</h2>
+			<div class=delivery-offer>
+				<b>КОМПАНИЯ «Техномарт»</b>
+				<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+				<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+				Техномарт работает со многими транспортными компаниями: </p>
+				<ul class="delivery-companies">
+					<li>Деловые линии</li>
+					<li>Автотрейдинг</li>
+					<li>ЖелДорЭкспедиция</li>  					
+				</ul>
+				<a class="button-common company-details" href="#">Подробнее о компании</a>
+	
+			</div>
+			<div class="direction">
+				<b>Контакты</b>
+				<p>Вы можете забрать товар сами,<br>
+				заехав в наш офис:</p>
+				<a class="map" href="#">
+					<img src="img/location-on-map.jpg" src="#" width="300" height="158" alt="Наше положение на карте">  					
+				</a>
+				<a class="button-common feedback" href="#">Заблудились? Напишите нам!</a>
+			</div>
+		</section>
       </div>
   	</main>
     <footer class="main-footer">
@@ -307,34 +332,44 @@
     </footer>
 
 
-  	<section class="modal modal-feedback">
+  	<div class="modal modal-feedback">
   		<h2 class="visually-hidden">Обратная связь</h2>
-  		<form class="feedback-form" action="#" method="post">
-	  		<p>
-	  			<label for="feedback-name-input">Ваше имя:</label>
-	  			<input type="text" id="feedback-name-input" name="feed-name" placeholder="Имя Фамилия">
-	  		</p>
-	  		 <p>
-	  			<label for="feedback-email-input">Ваш e-mail:</label>
-	  			<input type="text" id="feedback-email-input" name="feed-email" placeholder="email@example.com">
-	  		</p>
-	  		<p>
-	  			<label for="feedback-comment-field">Текст письма:</label><br>
-	  			<textarea id="feedback-comment-field" rows="7" cols="40" name="feed-comment">В свободной форме</textarea>
-	  		</p>
-  		</form>
-  		<button type="submit" class="button">Отправить</button>
+  		<div class="modal-wrapper">
+	  		<form class="feedback-form" action="#" method="post">
+		  		<ul class="form-authorization">
+		  			<li>
+		  				<label for="feedback-name-input">Ваше имя:</label><br>
+		  				<input type="text" id="feedback-name-input" name="feed-name" placeholder="Имя Фамилия">
+		  			</li>
+		  			<li>
+		  				<label for="feedback-email-input">Ваш e-mail:</label><br>
+		  				<input type="text" id="feedback-email-input" name="feed-email" placeholder="email@example.com">
+		  			</li>
+		  		</ul>
+		  		<div class="form-for-comments">
+		  			<label for="feedback-comment-field">Текст письма:</label><br>
+		  			<textarea id="feedback-comment-field" rows="6" cols="58" name="feed-comment">В свободной форме</textarea>
+		  		</div>
+	  		</form>
+  		</div>
+  		<div class="modal-footer">
+  			<div class="modal-wrapper">
+  				<a class="button-common send-feedback">Отправить</a>
+  			</div>	
+  		</div>	
   		<button type="button" class="modal-close">Закрыть</button>	
+  	</div>
 
-
-  	<section class="modal modal-map">
+  	
+  	<div class="modal modal-map">
       <h2 class="visually-hidden">Наш офис на карте</h2>
       <p>
         <img src="img/map.jpg" width="940" height="447" alt="Офис компании по адресу ул.Большая Конюшенная 19/8, Санкт-Петербург">
       </p>
       <button type="button" class="modal-close">Закрыть</button>
-    </section>  		
-  	</section>
+    </div>   
+
+    <div class="overlay"></div>		
 
   </body>
 </html>
