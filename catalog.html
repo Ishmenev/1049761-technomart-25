@@ -18,7 +18,7 @@
                 <input type="search" id="search-link" placeholder="Поиск:" name="search-menu">
               </form>
               <a class="user-menu-link marks-link" href="#">Закладки: 0</a>
-              <a class="user-menu-link basket-link" href="#">Корзина: 0</a>
+              <a class="user-menu-link basket-link no-empty" href="#">Корзина: 10</a>
               <a class="user-menu-link order-link" href="#">Оформить заказ</a>
           </div>
         </div>
@@ -57,13 +57,13 @@
     </header>
   	<main class="catalog-content">
       <div class="container">
-    		<ul class="breadcrumbs">
-    			<li><a class="breadcrumb" href="index.html"><img src="img/icon-home.png" width="14" height="12"></a></li>
-    			<li><a class="breadcrumb" href="сatalog.html">Каталог</a></li>
-    			<li><a class="breadcrumb" href="instrument.html">Инструмент</a></li>
-    			<li class="breadcrumb current">Перфораторы</li>
-    		</ul>
-    	   <h2 class="catalog-title">Перфораторы</h2>
+		<ul class="breadcrumbs">
+			<li><a class="breadcrumb" href="index.html"><img src="img/icon-home.png" width="14" height="12"></a></li>
+			<li><a class="breadcrumb" href="сatalog.html">Каталог</a></li>
+			<li><a class="breadcrumb" href="instrument.html">Инструмент</a></li>
+			<li class="breadcrumb current">Перфораторы</li>
+		</ul>
+    	 <h2 class="catalog-title">Перфораторы</h2>
         <div class="catalog-columns">
       		<section class="catalog-filters">	
       			<form class="filters-form" action="#" method="get">
@@ -153,8 +153,8 @@
       				<a class="catalog-offers-current">По цене</a>
       				<a href="#">По типу</a>
       				<a href="#">По функционалу</a>
-      				<button class="button-filter-up" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ee3643" d="M5.5 0L0 10h11z"/></svg></button>
-      				<button class="button-filter-down" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#c5c5c5" d="M5.5 10L0 0h11"/></svg></button>
+      				<button class="button-filter catalog-button-current up" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#c5c5c5" d="M5.5 0L0 10h11z"/></svg></button>
+      				<button class="button-filter down" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#c5c5c5" d="M5.5 10L0 0h11"/></svg></button>
       			</div>
             <div class="catalog-wrapper">
       			<ul class="inner-catalog-list">
@@ -340,7 +340,7 @@
       				</li>				
       			</ul>	
             </div>		
-    			   <h2 class="visually-hidden">Пагинация страниц</h2>
+    		<h2 class="visually-hidden">Пагинация страниц</h2>
 	            <ul class="pagination-list">
 	              <li class="pagination-current"><a href="#"><span>1</span></a></li>
 	              <li class="pagination-item"><a href="#"><span>2</span></a></li>
@@ -427,6 +427,37 @@
       </div>
       <button type="button" class="modal-close">Закрыть</button>
     </div>
+
+    <script>
+      
+      var modalBuy = document.querySelectorAll(".button-buy");
+      var buyPopup = document.querySelector(".add-product");
+      var mapClose = buyPopup.querySelectorAll(".modal-close");
+
+      for (var i=0; i<modalBuy.length; i++) {
+      modalBuy[i].addEventListener("click", function (evt) {
+        evt.preventDefault();
+        buyPopup.classList.add("modal-show");
+        });
+      };
+
+      for (var n=0; n<mapClose.length; n++) {
+      mapClose[n].addEventListener("click", function (evt) {
+        evt.preventDefault();
+        buyPopup.classList.remove("modal-show");
+        });
+      };
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (buyPopup.classList.contains("modal-show")) {
+        buyPopup.classList.remove("modal-show");
+          }
+        }
+      });
+      
+    </script>
 
   </body>
 </html>
