@@ -2134,6 +2134,7 @@ background-color: #5fbb2d;
 
 .button-common.send-feedback {
 	display: inline-block;
+	vertical-align: top;
 	width: 100%;
 	cursor: pointer;
 	border: none;
