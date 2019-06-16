@@ -150,7 +150,7 @@ a {
 
 .header-user-menu input::before,
 .header-user-menu input::after {
-	content: "",
+	content: "";
 	visibility: hidden;
 }
 
@@ -1185,6 +1185,7 @@ a {
 	background-color: #f7f3ec;
 	position: relative;
 	height: 80px;
+	cursor: pointer;
 }
 
 .range-controls .scale {
@@ -1304,7 +1305,10 @@ a {
 	padding-left: 35px;
 	padding-top: 15px;
 	padding-bottom: 5px;
+}
 
+.brand-filter label {
+	cursor: pointer;
 }
 
 .brand-filter-indicator {
@@ -1343,6 +1347,9 @@ a {
 	opacity: 0.1;
 }
 
+.energy-filter label {
+	cursor: pointer;
+}
 
 .energy-filter-indicator {
 	display: inline-block;
@@ -2183,8 +2190,18 @@ background-color: #5fbb2d;
 	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 }
 
-.modal-map p {
-	margin: 0;
+.map-static {
+	position: absolute;
+	z-index: 20;
+}
+
+.map-interactive {
+	position: absolute;
+	z-index: 21;
+}
+
+.modal-map button {
+	z-index: 21;
 }
 
 /**/
